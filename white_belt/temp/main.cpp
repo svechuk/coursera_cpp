@@ -2,12 +2,19 @@
 using namespace std;
 
 int main() {
-	int a, b;
-	cin >> a >> b;
-	if (b == 0) {
-		cout << "Imposibble" << endl;
-	} else {
-		cout << a / b << endl;
+	double a, b, x, y, n, final;
+	cin >> n >> a >> b >> x >> y;
+
+	if (n > b) {
+		final = n * (1 - y / 100);
 	}
+	else if (n > a) {
+		final = n * (1 - x / 100);
+	}
+	else {
+		final = n;
+	}
+
+	cout << final << endl;
 	return 0;
 }
