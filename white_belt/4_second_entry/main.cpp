@@ -8,12 +8,12 @@ int main() {
 	cin >> str;
 
 	for (int i = 0; i < str.size(); ++i) {
-		if (count == 2) {
-			cout << i - 1;
-			break;
-		}
 		if (str[i] == 'f') {
 			++count;
+		}
+		if (count == 2) {
+			cout << i;
+			break;
 		}
 	}
 
